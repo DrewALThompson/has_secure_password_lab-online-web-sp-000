@@ -10,7 +10,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to :welcome
     else
-      render :login, alert: "User Failed to Create"
+      render :signup, alert: "User Failed to Create"
     end
   end 
   
